@@ -9,7 +9,7 @@
   "updateUrl": "",
   "authorList": ["Blue_Beaker"],
   "credits": "Authors of Crafttweaker and ModTweaker",
-  "logoFile": "",
+  "logoFile": "icon.png",
   "screenshots": [],
   "dependencies": ["mixinbooter>=8.6"]
 }
