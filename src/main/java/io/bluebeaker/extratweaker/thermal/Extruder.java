@@ -17,16 +17,16 @@ import stanhebben.zenscript.annotations.ZenMethod;
 @ModOnly("thermalexpansion")
 public class Extruder {
     @ZenMethod
-    public void addRecipeIgneous(IItemStack output, int lava, int water, int energy) {
-        ExtraTweaker.LATE_ADDITIONS.add(energy, new ExtruderRecipe(output, lava, water, energy, false));
+    public static void addRecipeIgneous(IItemStack output, int lava, int water, int energy) {
+        ExtraTweaker.LATE_ADDITIONS.add(new ExtruderRecipe(output, lava, water, energy, false));
     }
 
     @ZenMethod
-    public void addRecipeSedimentary(IItemStack output, int lava, int water, int energy) {
-        ExtraTweaker.LATE_ADDITIONS.add(energy, new ExtruderRecipe(output, lava, water, energy, true));
+    public static void addRecipeSedimentary(IItemStack output, int lava, int water, int energy) {
+        ExtraTweaker.LATE_ADDITIONS.add(new ExtruderRecipe(output, lava, water, energy, true));
     }
 
-    public class ExtruderRecipe implements IAction{
+    public static class ExtruderRecipe implements IAction{
         IItemStack output;
         int lava;
         int water;
