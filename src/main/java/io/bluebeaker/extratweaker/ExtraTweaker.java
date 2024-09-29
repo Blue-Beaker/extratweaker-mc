@@ -15,6 +15,7 @@ import net.minecraftforge.fml.client.event.ConfigChangedEvent.OnConfigChangedEve
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLLoadCompleteEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -52,8 +53,8 @@ public class ExtraTweaker
         }
     }
 
-    @Mod.EventHandler
-    public void loadComplete(FMLLoadCompleteEvent event) {
+    @EventHandler
+    public void loadComplete(FMLPostInitializationEvent event) {
         try {
             LATE_REMOVALS.forEach(CraftTweakerAPI::apply);
             LATE_ADDITIONS.forEach(CraftTweakerAPI::apply);
