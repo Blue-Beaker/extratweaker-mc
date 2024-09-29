@@ -1,16 +1,16 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "modid": "extratweaker",
+  "name": "Extra Tweaker",
+  "description": "CraftTweaker addon for something absent.",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["CleanroomMC"],
-  "credits": "Authors of this project",
+  "authorList": ["Blue_Beaker"],
+  "credits": "Authors of Crafttweaker and ModTweaker",
   "logoFile": "",
   "screenshots": [],
-  "dependencies": []
+  "dependencies": ["mixinbooter>=8.6"]
 }
 ]
