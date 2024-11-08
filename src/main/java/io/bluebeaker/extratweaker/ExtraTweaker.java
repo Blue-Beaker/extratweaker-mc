@@ -14,7 +14,6 @@ import net.minecraftforge.common.config.Config.Type;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent.OnConfigChangedEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
-import net.minecraftforge.fml.common.event.FMLLoadCompleteEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
@@ -25,7 +24,7 @@ public class ExtraTweaker
 {
     public static final String MODID = "extratweaker";
     public static final String NAME = "ExtraTweaker";
-    public static final String VERSION = "1.0";
+    public static final String VERSION = "1.1";
     
     public static final List<IAction> LATE_REMOVALS = new LinkedList<>();
     public static final List<IAction> LATE_ADDITIONS = new LinkedList<>();
